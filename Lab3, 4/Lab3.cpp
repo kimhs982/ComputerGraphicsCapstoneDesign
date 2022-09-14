@@ -1,6 +1,5 @@
 #include <gl/glut.h>
 #include <stdio.h>
-#include <windows.h>
 
 // 사용자 초기화 함수
 void init(void)
@@ -30,8 +29,8 @@ void draw_point(void)
 	glEnd();
 }
 
-// 선 그리기 함수, mode(1: LIne, 2: Stripple Line, 3: Loop Line)
-void draw_line(int mode = 1)
+// 선 그리기 함수
+void draw_line(void)
 { 
 	// 선의 색상을 노란색으로
 	glColor3f(1.0f, 1.0f, 0.0f);
